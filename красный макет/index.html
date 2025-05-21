@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Токранова</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Узнайте цену <font color="red">вашей кухни</font></h1>
+      <div class="Style">
+        <h4>Стиль:</h4>
+        <div class="cards">
+          <div class="Style-elements">
+            <label>
+              <img src="./img/1.png" alt="" />
+              <input
+                type="radio"
+                name="name"
+                value="250000"
+                data-cost="250000"
+              />
+              <p>Современный стиль</p>
+            </label>
+          </div>
+          <div class="Style-elements">
+            <label>
+              <img src="./img/2.png" alt="" />
+              <input
+                type="radio"
+                name="name"
+                value="270000"
+                data-cost="270000"
+              />
+              <p>Кухни Лофт</p>
+            </label>
+          </div>
+          <div class="Style-elements">
+            <label>
+              <img src="./img/3.png" alt="" />
+              <input
+                type="radio"
+                name="name"
+                value="150000"
+                data-cost="150000"
+              />
+              <p>Классический стиль</p>
+            </label>
+          </div>
+          <div class="Style-elements">
+            <label>
+              <img src="./img/4.png" alt="" />
+              <input
+                type="radio"
+                name="name"
+                value="100000"
+                data-cost="100000"
+              />
+              <p>Другое</p>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="forma">
+        <h4>Форма:</h4>
+        <div class="forma-cards">
+          <div class="forma-element">
+            <label>
+              <input type="radio" name="form" value="100" data-cost="100" />
+              <div class="white"><img src="./img/11.png" alt="" /></div>
+              <div class="red"><img src="./img/111.png" alt="" /></div>
+              <p>Прямая кухня</p>
+            </label>
+          </div>
+          <div class="forma-element">
+            <label>
+              <input type="radio" name="form" value="200" data-cost="200" />
+              <div class="white"><img src="./img/22.png" alt="" /></div>
+              <div class="red"><img src="./img/222.png" alt="" /></div>
+              <p>Угловая кухня</p>
+            </label>
+          </div>
+          <div class="forma-element">
+            <label>
+              <input type="radio" name="form" value="300" data-cost="300" />
+              <div class="white"><img src="./img/33.png" alt="" /></div>
+              <div class="red"><img src="./img/333.png" alt="" /></div>
+              <p>П-образная кухня</p>
+            </label>
+          </div>
+          <div class="forma-element">
+            <label>
+              <input type="radio" name="form" value="400" data-cost="400" />
+              <div class="white"><img src="./img/44.png" alt="" /></div>
+              <div class="red"><img src="./img/444.png" alt="" /></div>
+              <p>Параллельная кухня</p>
+            </label>
+          </div>
+          <div class="forma-element">
+            <label>
+              <input type="radio" name="form" value="500" data-cost="500" />
+              <div class="white"><img src="./img/55.png" alt="" /></div>
+              <div class="red"><img src="./img/555.png" alt="" /></div>
+              <p>Кухня с островом</p>
+            </label>
+          </div>
+          <div class="forma-element">
+            <label>
+              <input type="radio" name="form" value="600" data-cost="600" />
+              <div class="white"><img src="./img/66.png" alt="" /></div>
+              <div class="red"><img src="./img/666.png" alt="" /></div>
+              <p>Другие формы</p>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="ploshad">
+        <h4>Площадь кухни:</h4>
+        <div class="ploshad-cards">
+          <div class="ploshad-element">
+            <label>
+              <input type="radio" name="m" value="20000" data-cost="20000" />
+              <p>До 5 м²</p>
+            </label>
+          </div>
+          <div class="ploshad-element">
+            <label>
+              <input type="radio" name="m" value="30000" data-cost="30000" />
+              <p>До 8 м²</p>
+            </label>
+          </div>
+          <div class="ploshad-element">
+            <label>
+              <input type="radio" name="m" value="40000" data-cost="40000" />
+              <p>До 15 м²</p>
+            </label>
+          </div>
+          <div class="ploshad-element">
+            <label>
+              <input type="radio" name="m" value="70000" data-cost="70000" />
+              <p>Другое</p>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div
+        id="costDesc"
+        class="cost-display"
+        aria-live="polite"
+        aria-atomic="true"
+        role="alert"
+      >
+        Итого: 0.00
+      </div>
+      <div class="btns">
+        <button type="submit" class="button-w" aria-describedby="num">
+          Номер телефона
+        </button>
+        <button type="submit" class="button-r" aria-describedby="costDesc">
+          Рассчитать стоимость
+        </button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
